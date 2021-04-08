@@ -33,6 +33,9 @@ brew 还提供了 cask 版本,比如下载 Google Chrome ,但是图形化的软�
 ## 文本编辑器
 
 ## IDE
+## 键位更改 Karabiner
+
+> mac 自带的control n/p/f/b 大部分都是可以代替方向键的，但是有些时候还是不能等于方向键的,比如有时候在输入的时候，同时又要上下选择的时候，这时候 Karabiner 就派上用场了
 
 
 
