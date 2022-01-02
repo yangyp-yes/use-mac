@@ -47,6 +47,7 @@ brew 还提供了 cask 版本,比如下载 Google Chrome ,但是图形化的软�
 
 ## 窗口切换软件 AltTab
 可以配置alt tab 在同一app不同窗口中切换，配置cmd tab 在不同app中切换
+## 修改外接显示器亮度和音量 MonitorControl
 
 
 ## 使用问题记录
