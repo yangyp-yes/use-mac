@@ -51,4 +51,5 @@ Manico Thor Keyboard Maestro hammerspoon 正在摸索
 ## 修改外接显示器亮度和音量 MonitorControl
 
 
-
+## scrollreverser 
+鼠标滚动方向调整
