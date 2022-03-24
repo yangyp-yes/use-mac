@@ -53,3 +53,41 @@ Manico Thor Keyboard Maestro hammerspoon 正在摸索
 
 ## scrollreverser 
 鼠标滚动方向调整
+
+
+## mac 飞书无法使用麦克风和摄像头的问题
+设备 m1 MacBook pro 系统版本 12.0.1 已关闭 SIP 验证
+
+com.bytedance.macos.feishu 是飞书的app id ，开启制定app 可以在app 里面的 info.plist 的 CFBundleIdentifier 字段
+
+```
+sudo sqlite3 ~/Library/Application\ Support/com.apple.TCC/TCC.db "INSERT or REPLACE INTO access VALUES('kTCCServiceMicrophone','com.bytedance.macos.feishu',0,0,4,1,NULL,NULL,0,'UNUSED',NULL,0,1622199671);"
+
+sudo sqlite3 ~/Library/Application\ Support/com.apple.TCC/TCC.db "INSERT or REPLACE INTO access VALUES('kTCCServiceCamera','com.bytedance.macos.feishu',0,2,0,1,NULL,NULL,NULL,'UNUSED',NULL,0,1608354323);"
+```
+## Mac VPN
+设备 m1 MacBook pro 系统版本 12.0.1 已关闭 SIP 验证
+
+软件：
+Tunnelblick
+
+配置文件：
+
+```
+*.crt   // 放到Tunnelblick 路径
+*.key   // 放到Tunnelblick 路径
+ca.crt  // 放到Tunnelblick 路径
+
+*.ovpn  //配置文件安装 Tunnelblick 后直接导入就可以
+```
+
+Tunnelblick 路径
+
+`~/Library/Application Support/Tunnelblick/Configurations` 
+
+
+#### 问题 failed to negotiate cipher with server. Add the server's cipher ('BF-CBC') to --data-ciphers (currently 'AES-256-GCM:AES-128-GCM') if you want to connect to this server.
+ovpn配置文件里面添加
+```
+cipher BF-CBC
+```
