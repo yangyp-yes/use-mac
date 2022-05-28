@@ -37,7 +37,12 @@ brew 还提供了 cask 版本,比如下载 Google Chrome ,但是图形化的软�
 
 > mac 自带的control n/p/f/b 大部分都是可以代替方向键的，但是有些时候还是不能等于方向键的,比如有时候在输入的时候，同时又要上下选择的时候，这时候 Karabiner 就派上用场了
 
-下载 [my-rules](./my-rules.json)到 ~/.config/karabiner/assets/complex_modifications 中，然后到Karabiner-Elements 中 Complex modifications --- add ruler 开启即可
+下载 [my-rules](./my-rules.json)到 `~/.config/karabiner/assets/complex_modifications` 中，然后到Karabiner-Elements 中 Complex modifications --- add ruler 开启即可
+
+### 关于M1无法开启Karabine 权限问题
+
+暂时换用 Keyboard Maestro 进行改键
+
 
 ## 快速启动软件
 Manico Thor Keyboard Maestro hammerspoon 正在摸索
@@ -92,6 +97,15 @@ ovpn配置文件里面添加
 cipher BF-CBC
 ```
 
-### typec 拓展坞只能 4k 30HZ
+## typec 拓展坞只能 4k 30HZ
 用的公司的飞利浦拓展坞 连接HDMI 只能 4K 30HZ 
 换用官方拓展坞解决
+
+## Sublime Text 4 Safe mode
+当使用快捷键(Option+快捷键)首次打开Sublime Text 4 后,会进入安全模式,非常不方便,想要屏蔽这个功能, 在`~/Library/Application Support/Sublime Text` 创建
+ `.Disable Safe Mode` 文件即可
+
+
+## Git 多项目配置
+
+includeIf
