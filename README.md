@@ -90,6 +90,8 @@ Tunnelblick 路径
 
 `~/Library/Application Support/Tunnelblick/Configurations` 
 
+其他软件 Viscosity(付费)
+
 
 #### 问题 failed to negotiate cipher with server. Add the server's cipher ('BF-CBC') to --data-ciphers (currently 'AES-256-GCM:AES-128-GCM') if you want to connect to this server.
 ovpn配置文件里面添加
