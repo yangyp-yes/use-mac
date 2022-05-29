@@ -46,7 +46,10 @@ brew 还提供了 cask 版本,比如下载 Google Chrome ,但是图形化的软�
 
 ## 快速启动软件
 Manico Thor Keyboard Maestro hammerspoon 正在摸索
+## hammerspoon
+用来替代Karabine 和 Manico
 
+配置[init](./hammerspoon/init.lua)
 
 ## 截图软件 Snipaste
 特色: 贴图功能
