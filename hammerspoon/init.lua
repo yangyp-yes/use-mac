@@ -21,10 +21,11 @@ for key, app in pairs(applist) do
 end
 -- Toggle an application between being the frontmost app, and being hidden
 function toggle_application(_app,displayName)
-	if not displayName then
-		displayName = _app;
-	end
+    if not displayName then
+        displayName = _app;
+    end
     local app = appfinder.appFromName(displayName)
+    print(app)
     if not app then
         application.launchOrFocus(_app)
         return
@@ -38,20 +39,22 @@ function toggle_application(_app,displayName)
             mainwin:application():unhide()
             mainwin:focus()
         end
+    else
+        application.launchOrFocus(_app)
     end
 end
 
 local function pressFn(mods, key)
-	if key == nil then
-		key = mods
-		mods = {}
-	end
+    if key == nil then
+        key = mods
+        mods = {}
+    end
 
-	return function() hs.eventtap.keyStroke(mods, key, 1000) end
+    return function() hs.eventtap.keyStroke(mods, key, 1000) end
 end
 
 local function remap(mods, key, pressFn)
-	hs.hotkey.bind(mods, key, pressFn, nil, pressFn)	
+    hs.hotkey.bind(mods, key, pressFn, nil, pressFn)    
 end
 
 remap({'ctrl'}, 'b', pressFn('left'))
