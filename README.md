@@ -108,7 +108,7 @@ cipher BF-CBC
 
 ## Sublime Text 4 Safe mode
 当使用快捷键(Option+快捷键)首次打开Sublime Text 4 后,会进入安全模式,非常不方便,想要屏蔽这个功能, 在`~/Library/Application Support/Sublime Text` 创建
- `.Disable Safe Mode` 文件即可
+ `.Disable Safe Mode Shortcut` 文件即可
 
 
 ## Git 多项目配置
