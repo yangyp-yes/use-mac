@@ -18,6 +18,7 @@ local app2Ime = {
     {'/Applications/Google Chrome.app', 'English'},
     {'/System/Library/CoreServices/Finder.app', 'English'},
     {'/Applications/Lark.app', 'Chinese'},
+    {'/Applications/WeChat.app', 'Chinese'},
 }
 
 function updateFocusAppInputMethod()
