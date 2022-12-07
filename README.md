@@ -51,6 +51,8 @@ Manico Thor Keyboard Maestro hammerspoon 正在摸索
 
 配置[init](./hammerspoon/init.lua)
 
+> hammerspoon 遇到切换响应慢的问题 暂时切换回 Manico (13.0.1 (22A400))
+ 
 ## 截图软件 Snipaste
 特色: 贴图功能
 
