@@ -25,6 +25,9 @@ brew 还提供了 cask 版本,比如下载 Google Chrome ,但是图形化的软�
 `brew info nginx`
 这个可以查看安装的 nginx 版本,安装路径,已经配置文件路径等等信息,还有启动,所以在你百度 nginx 的用法之前,先查看下是个不错的选择
 
+#### 安装nvm
+
+`brew install nvm`
 
 ## iTerm
 
